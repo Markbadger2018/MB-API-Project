@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "fir-api-project-mb",
+    "marks-firebase-project": "fir-api-project-mb"
+  }
+}
