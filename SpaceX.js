@@ -3,7 +3,8 @@ const baseURL = 'https://api.spacexdata.com/v2/rockets';
 const searchForm = document.querySelector('form');
 const spaceShips = document.querySelector('.modal-body');
 
-searchForm.addEventListener('.btn btn-primary', fetchSpace);
+searchForm.addEventListener('btn btn-primary', fetchSpace);
+('#myModal').modal(options)
 
 function fetchSpace(e){
     e.preventDefault();
@@ -26,7 +27,7 @@ function displayRockets(rockets){
 }*/
 function displayRockets(rocketName){
     rocketName.forEach(r => {
-        let rocket = document.createElement('li');
+        let rocket = document.createElement('h2');
         rocket.innerText = r.name;
         spaceShips.appendChild(rocket);
     })
