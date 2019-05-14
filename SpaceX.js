@@ -1,10 +1,10 @@
 const baseURL = 'https://api.spacexdata.com/v2/rockets';
 
 const searchForm = document.querySelector('form');
-const spaceShips = document.querySelector('.modal-body');
-
-searchForm.addEventListener('btn btn-primary', fetchSpace);
-('#myModal').modal(options)
+const spaceShips = document.querySelector('#rocketData');
+// div.modal-body
+searchForm.addEventListener('click', fetchSpace);
+// ('#myModal').modal(options)
 
 function fetchSpace(e){
     e.preventDefault();
